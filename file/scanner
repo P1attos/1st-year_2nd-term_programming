@@ -1,0 +1,23 @@
+package FileHandling;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileReading {
+    public static void main(String[] args) throws FileNotFoundException {
+        File inputfile = new File("C:\\Users\\montaleskn\\Documents\\NetBeansProjects\\EiaNiJava\\input.txt");
+        Scanner inFile = new Scanner(inputfile);
+        
+        try{
+            while(inFile.hasNextLine()){
+                System.out.println(inFile.nextLine());
+            }
+            System.out.println("");
+        }
+        catch(Exception e){
+            System.out.println("there is an error");
+            System.out.println(e.getMessage());
+        }
+    
+}
+}
