@@ -1,0 +1,23 @@
+package FileHandling;
+import java.io.*;
+public class FileReadFR {
+    public static void main(String[] args) throws IOException, FileNotFoundException { 
+        File inFile = new File("C:\\Users\\montaleskn\\Documents\\NetBeansProjects\\EiaNiJava\\input.txt");
+        FileReader fr = new FileReader(inFile);
+        
+        try{
+            int i;
+            while((i = fr.read()) != -1) {
+                System.out.print((char) i);
+            
+        }
+            
+        }
+        catch(Exception e) {
+            System.out.println("there's an Error reading the file: ");
+            System.out.println(e.getMessage());
+        }
+    }
+    
+    
+}
