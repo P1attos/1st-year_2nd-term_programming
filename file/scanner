@@ -18,6 +18,9 @@ public class FileReading {
             System.out.println("there is an error");
             System.out.println(e.getMessage());
         }
+        
+        finally {
+            inFile.close();
     
 }
 }
